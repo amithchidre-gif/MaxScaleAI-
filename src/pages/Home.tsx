@@ -110,20 +110,23 @@ const Home = () => {
                 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-left"
                 variants={fadeInUp}
               >
-                Scale Smarter with AI<br />
-                Cut Costs upto 79%<br />
-                Grow Revenue by 100%
+                Scale Smarter with AI
               </motion.h1>
-              
+              <div className="space-y-2 mt-2">
+                <div className="flex flex-row gap-6 items-center">
+                  <span className="text-2xl md:text-3xl font-bold text-green-400">Cut Costs up to 79%</span>
+                  <span className="hidden md:inline-block w-8 h-1 bg-gradient-to-r from-purple-500 to-purple-700 rounded-full animate-pulse"></span>
+                  <span className="text-2xl md:text-3xl font-bold text-purple-400">Grow Revenue by 100%</span>
+                </div>
+                <div className="w-full h-1 bg-gradient-to-r from-gray-700 via-purple-500 to-gray-700 rounded-full my-2 animate-pulse"></div>
+              </div>
               <motion.p 
-                className="text-xl text-gray-300 leading-relaxed max-w-2xl text-left"
+                className="text-xl text-gray-300 leading-relaxed max-w-2xl text-left mt-2"
                 variants={fadeInUp}
               >
-                we design AI solutions that help businesses reduce expenses,<br />
-                generate qualified leads, and double their revenue—without adding<br />
-                complexity
+                We design AI solutions that help businesses reduce expenses, generate qualified leads,<br />
+                and double their revenue — all without adding complexity.
               </motion.p>
-              
               <motion.div 
                 className="flex flex-col gap-6"
                 variants={fadeInUp}
@@ -142,7 +145,6 @@ const Home = () => {
                     Our services
                   </Link>
                 </div>
-                
                 {/* Social Proof - Below buttons */}
                 <div className="flex items-center gap-4">
                   <p className="text-gray-400 text-sm">Loved by founders worldwide</p>
@@ -171,7 +173,6 @@ const Home = () => {
                 </div>
               </motion.div>
             </div>
-            
             {/* Right Content - Spline Animation */}
             <motion.div 
               className="flex items-center justify-center"
@@ -431,7 +432,7 @@ const Home = () => {
             variants={fadeInUp}
           >
             <h2 className="text-4xl font-bold text-white mb-6">
-              Why Choose Max Scale AI?
+              Why Choose GrowthIQX?
             </h2>
           </motion.div>
           

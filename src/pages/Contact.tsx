@@ -238,10 +238,10 @@ const Contact = () => {
                     <div>
                       <h4 className="font-semibold text-white mb-1">Email Us</h4>
                       <a 
-                        href="mailto:info@maxscaleai.com"
+                        href="mailto:info@growthiqx.com"
                         className="text-gray-300 hover:text-white transition-colors"
                       >
-                        info@maxscaleai.com
+                        info@growthiqx.com
                       </a>
                     </div>
                   </div>

@@ -7,11 +7,11 @@ const Navbar = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: 'Home', path: '/' },
-    { name: 'Services', path: '/services' },
-    { name: 'Founder', path: '/founder' },
-    { name: 'FAQ', path: '/faq' },
-    { name: 'Contact', path: '/contact' }
+  { name: 'Home', path: '/' },
+  { name: 'Services', path: '/services' },
+  // { name: 'Founder', path: '/founder' }, // Founder page hidden
+  { name: 'FAQ', path: '/faq' },
+  { name: 'Contact', path: '/contact' }
   ];
 
   return (
@@ -25,12 +25,13 @@ const Navbar = () => {
                   <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
                 </svg>
               </div>
-              <span className="text-xl font-bold text-white">Max Scale AI</span>
+              <span className="text-xl font-bold text-white">Growth IQ X</span>
             </Link>
             
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
-              {navItems.map((item) => (
+              {/* Founder link hidden for now */}
+              {navItems.filter(item => item.name !== 'Founder').map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
@@ -67,7 +68,8 @@ const Navbar = () => {
         <div className="md:hidden bg-gray-800/90 backdrop-blur-md">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              {navItems.map((item) => (
+              {/* Founder link hidden for now */}
+              {navItems.filter(item => item.name !== 'Founder').map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}

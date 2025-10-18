@@ -19,15 +19,15 @@ const Founder = () => {
 
   const teamMembers = [
     {
-      name: "Amith Chidre",
-      role: "Founder & Strategy Lead",
-      bio: "Amith brings over a decade of experience in business strategy and AI implementation. He has helped hundreds of businesses transform their operations through intelligent automation and data-driven decision making. His vision is to make AI accessible to businesses of all sizes.",
-      image: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=2",
-      social: {
-        linkedin: "#",
-        twitter: "#",
-        email: "amith@maxscaleai.com"
-      }
+        name: "Amith Chidre",
+        role: "Founder & Strategy Lead",
+        bio: "Amith brings over two decades of business growth and strategy experience. He has helped hundreds of businesses transform their operations through intelligent automation and data-driven decision-making. His vision is to make AI accessible to organizations of all sizes—empowering them to scale efficiently, innovate faster, and achieve greater profitability.",
+        image: "/amith-profile-new.png",
+        social: {
+          linkedin: "#",
+          twitter: "#",
+          email: "amith@growthiqx.com"
+        }
     },
     {
       name: "Sarah Johnson",
@@ -37,7 +37,7 @@ const Founder = () => {
       social: {
         linkedin: "#",
         twitter: "#",
-        email: "sarah@maxscaleai.com"
+        email: "sarah@growthiqx.com"
       }
     },
     {
@@ -48,7 +48,7 @@ const Founder = () => {
       social: {
         linkedin: "#",
         twitter: "#",
-        email: "michael@maxscaleai.com"
+        email: "michael@growthiqx.com"
       }
     },
     {
@@ -59,7 +59,7 @@ const Founder = () => {
       social: {
         linkedin: "#",
         twitter: "#",
-        email: "emily@maxscaleai.com"
+        email: "emily@growthiqx.com"
       }
     }
   ];
@@ -75,7 +75,7 @@ const Founder = () => {
             variants={fadeInUp}
           >
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Meet the People Behind Max Scale AI
+              Meet the People Behind GrowthIQX
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
               We're a team of innovators, engineers, and strategists dedicated to building AI 
@@ -107,6 +107,8 @@ const Founder = () => {
                       src={member.image}
                       alt={member.name}
                       className="w-32 h-32 rounded-xl object-cover"
+                      onLoad={() => console.log(`Image loaded successfully: ${member.image}`)}
+                      onError={(e) => console.error(`Image failed to load: ${member.image}`, e)}
                     />
                   </div>
                   

@@ -14,7 +14,7 @@ const Footer = () => {
                   <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
                 </svg>
               </div>
-              <span className="text-xl font-bold">Max Scale AI</span>
+              <span className="text-xl font-bold">GrowthIQX</span>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
               We design AI solutions that help businesses reduce expenses, generate qualified leads, 
@@ -23,7 +23,7 @@ const Footer = () => {
             <div className="flex space-x-4">
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-purple-400" />
-                <span className="text-sm">info@maxscaleai.com</span>
+                <span className="text-sm">info@growthiqx.com</span>
               </div>
             </div>
           </div>
@@ -56,7 +56,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2025 Max Scale AI. All rights reserved.
+            © 2025 GrowthIQX. All rights reserved.
           </p>
         </div>
       </div>

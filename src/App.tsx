@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/founder" element={<Founder />} />
+          {/* <Route path="/founder" element={<Founder />} /> */} {/* Founder page hidden for now */}
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

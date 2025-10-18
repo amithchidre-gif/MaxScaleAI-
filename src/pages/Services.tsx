@@ -63,7 +63,7 @@ const Services = () => {
               <span className="text-purple-400"> Tailored for Growth</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Max Scale AI provides AI-powered business solutions designed to generate leads, 
+              GrowthIQX provides AI-powered business solutions designed to generate leads, 
               improve sales, and automate operations.
             </p>
           </motion.div>
@@ -89,7 +89,7 @@ const Services = () => {
               working in your business
             </h2>
             <p className="text-xl text-gray-300 max-w-4xl mx-auto">
-              Max Scale AI Call Agents are designed for rapid deployment and immediate impact on your phone operations
+              GrowthIQX Call Agents are designed for rapid deployment and immediate impact on your phone operations
             </p>
           </motion.div>
 
