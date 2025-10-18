@@ -11,6 +11,8 @@ const Contact = () => {
     message: ''
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
 
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
@@ -48,20 +50,49 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    setIsSubmitted(true);
-    
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        service: '',
-        message: ''
+    setError(null);
+    // Basic frontend validation
+    if (!formData.name || !formData.email || !formData.message) {
+      setError('Please fill in all required fields.');
+      return;
+    }
+    setLoading(true);
+    fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        company: formData.company,
+        service: formData.service,
+        message: formData.message,
+      }),
+    })
+      .then(async (res) => {
+        setLoading(false);
+        if (res.ok) {
+          setIsSubmitted(true);
+          setFormData({
+            name: '',
+            email: '',
+            company: '',
+            service: '',
+            message: ''
+          });
+          setTimeout(() => {
+            setIsSubmitted(false);
+          }, 3000);
+        } else {
+          const data = await res.json();
+          setError(data.error || 'Failed to send message. Please try again.');
+        }
+      })
+      .catch(() => {
+        setLoading(false);
+        setError('Network error. Please try again.');
       });
-    }, 3000);
   };
 
   return (
@@ -105,6 +136,11 @@ const Contact = () => {
                 
                 {!isSubmitted ? (
                   <form onSubmit={handleSubmit} className="space-y-6">
+                    {error && (
+                      <div className="bg-red-600 text-white rounded-lg px-4 py-2 mb-4 text-center">
+                        {error}
+                      </div>
+                    )}
                     <motion.div 
                       className="grid md:grid-cols-2 gap-6"
                       variants={staggerChildren}
@@ -194,12 +230,13 @@ const Contact = () => {
                     
                     <motion.button
                       type="submit"
-                      className="w-full bg-gradient-to-r from-purple-500 to-purple-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
+                      className={`w-full bg-gradient-to-r from-purple-500 to-purple-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2 ${loading ? 'opacity-60 cursor-not-allowed' : ''}`}
                       variants={fadeInUp}
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
+                      disabled={loading}
                     >
-                      Send Message
+                      {loading ? 'Sending...' : 'Send Message'}
                       <Send className="h-5 w-5" />
                     </motion.button>
                   </form>
