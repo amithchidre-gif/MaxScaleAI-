@@ -199,222 +199,222 @@ const Home = () => {
             <div className="flex animate-scroll-left space-x-8 items-center">
               {/* First set of logos */}
               <div className="flex space-x-8 items-center flex-shrink-0">
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/LinkedIn_Logo_0.svg"
                     alt="LinkedIn"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/YouTube_Logo_0.svg"
                     alt="YouTube"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/x- logo.svg"
                     alt="X"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/WhatsApp-Logo.wine copy.svg"
                     alt="WhatsApp"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/Instagram_Glyph_Gradient.png"
                     alt="Instagram"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/OpenAI_Logo_0.svg"
                     alt="OpenAI"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/Pinecone.svg"
                     alt="Pinecone"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/full-logo-square-2 copy.svg"
                     alt="Vapi"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/Airtable_idksKOtgp1_0.svg"
                     alt="Airtable"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/supabase.svg"
                     alt="Supabase"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
               </div>
               
               {/* Duplicate set for seamless loop */}
               <div className="flex space-x-8 items-center flex-shrink-0">
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/LinkedIn_Logo_0.svg"
                     alt="LinkedIn"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/YouTube_Logo_0.svg"
                     alt="YouTube"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/x- logo.svg"
                     alt="X"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/WhatsApp-Logo.wine copy.svg"
                     alt="WhatsApp"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/Instagram_Glyph_Gradient.png"
                     alt="Instagram"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/OpenAI_Logo_0.svg"
                     alt="OpenAI"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/Pinecone.svg"
                     alt="Pinecone"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/full-logo-square-2 copy.svg"
                     alt="Vapi"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/Airtable_idksKOtgp1_0.svg"
                     alt="Airtable"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/supabase.svg"
                     alt="Supabase"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
               </div>
               
               {/* Third set for extra smoothness */}
               <div className="flex space-x-8 items-center flex-shrink-0">
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/LinkedIn_Logo_0.svg"
                     alt="LinkedIn"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/YouTube_Logo_0.svg"
                     alt="YouTube"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/x- logo.svg"
                     alt="X"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/WhatsApp-Logo.wine copy.svg"
                     alt="WhatsApp"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/Instagram_Glyph_Gradient.png"
                     alt="Instagram"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/OpenAI_Logo_0.svg"
                     alt="OpenAI"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/Pinecone.svg"
                     alt="Pinecone"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/full-logo-square-2 copy.svg"
                     alt="Vapi"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/Airtable_idksKOtgp1_0.svg"
                     alt="Airtable"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="rounded-xl p-6 w-32 h-20 flex items-center justify-center transition-all duration-300 hover:scale-105" style={{background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)'}}>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/supabase.svg"
                     alt="Supabase"
-                    className="h-6 w-auto object-contain"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
               </div>
