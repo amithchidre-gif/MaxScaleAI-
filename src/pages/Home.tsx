@@ -222,16 +222,16 @@ const Home = () => {
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/WhatsApp_Logo_Alternative_0.svg"
+                    src="/WhatsApp-Logo.wine copy.svg"
                     alt="WhatsApp"
-                    className="h-10 w-auto brightness-125 contrast-150 saturate-150"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/Instagram_Symbol_Alternative_0.svg"
+                    src="/Instagram_Glyph_Gradient.png"
                     alt="Instagram"
-                    className="h-10 w-auto brightness-125 contrast-150 saturate-150"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
@@ -250,7 +250,7 @@ const Home = () => {
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/vapi logo.png"
+                    src="/full-logo-square-2 copy.svg"
                     alt="Vapi"
                     className="h-10 w-auto brightness-110 contrast-125"
                   />
@@ -259,13 +259,6 @@ const Home = () => {
                   <img
                     src="/Airtable_idksKOtgp1_0.svg"
                     alt="Airtable"
-                    className="h-10 w-auto brightness-110 contrast-125"
-                  />
-                </div>
-                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
-                  <img
-                    src="/Twilio Logo SVG.svg"
-                    alt="Twilio"
                     className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
@@ -303,16 +296,16 @@ const Home = () => {
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/WhatsApp_Logo_Alternative_0.svg"
+                    src="/WhatsApp-Logo.wine copy.svg"
                     alt="WhatsApp"
-                    className="h-10 w-auto brightness-125 contrast-150 saturate-150"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/Instagram_Symbol_Alternative_0.svg"
+                    src="/Instagram_Glyph_Gradient.png"
                     alt="Instagram"
-                    className="h-10 w-auto brightness-125 contrast-150 saturate-150"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
@@ -331,7 +324,7 @@ const Home = () => {
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/vapi logo.png"
+                    src="/full-logo-square-2 copy.svg"
                     alt="Vapi"
                     className="h-10 w-auto brightness-110 contrast-125"
                   />
@@ -340,13 +333,6 @@ const Home = () => {
                   <img
                     src="/Airtable_idksKOtgp1_0.svg"
                     alt="Airtable"
-                    className="h-10 w-auto brightness-110 contrast-125"
-                  />
-                </div>
-                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
-                  <img
-                    src="/Twilio Logo SVG.svg"
-                    alt="Twilio"
                     className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
@@ -384,16 +370,16 @@ const Home = () => {
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/WhatsApp_Logo_Alternative_0.svg"
+                    src="/WhatsApp-Logo.wine copy.svg"
                     alt="WhatsApp"
-                    className="h-10 w-auto brightness-125 contrast-150 saturate-150"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/Instagram_Symbol_Alternative_0.svg"
+                    src="/Instagram_Glyph_Gradient.png"
                     alt="Instagram"
-                    className="h-10 w-auto brightness-125 contrast-150 saturate-150"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
@@ -412,7 +398,7 @@ const Home = () => {
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/vapi logo.png"
+                    src="/full-logo-square-2 copy.svg"
                     alt="Vapi"
                     className="h-10 w-auto brightness-110 contrast-125"
                   />
@@ -421,13 +407,6 @@ const Home = () => {
                   <img
                     src="/Airtable_idksKOtgp1_0.svg"
                     alt="Airtable"
-                    className="h-10 w-auto brightness-110 contrast-125"
-                  />
-                </div>
-                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
-                  <img
-                    src="/Twilio Logo SVG.svg"
-                    alt="Twilio"
                     className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
