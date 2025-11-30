@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { 
+import {
   Bot, Users, TrendingUp, Zap, Shield, Clock, Target,
   ArrowRight, Phone, MessageSquare, Globe, BarChart3,
-  Settings, Headphones, PhoneCall, Search
+  Settings, Headphones, PhoneCall, Search, Linkedin, Youtube
 } from 'lucide-react';
 
 const Home = () => {
@@ -523,7 +523,7 @@ const Home = () => {
       {/* Process Section */}
       <section className="bg-gray-900 py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             initial="initial"
             whileInView="animate"
@@ -537,8 +537,8 @@ const Home = () => {
               A systematic approach to implementing AI that delivers measurable results.
             </p>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             className="grid md:grid-cols-4 gap-8"
             initial="initial"
             whileInView="animate"
@@ -571,6 +571,79 @@ const Home = () => {
                 )}
               </motion.div>
             ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Meet The Founder Section */}
+      <section className="bg-black py-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-16">
+              Meet The Founder
+            </h2>
+
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <motion.div
+                className="flex justify-center"
+                variants={fadeInUp}
+              >
+                <div className="relative">
+                  <img
+                    src="/amith-profile-new.png.png"
+                    alt="Amith Chidre - Founder of GrowthIQX"
+                    className="rounded-2xl w-full max-w-md object-cover shadow-2xl"
+                  />
+                </div>
+              </motion.div>
+
+              <motion.div
+                className="space-y-6 text-gray-300"
+                variants={fadeInUp}
+              >
+                <p className="text-lg leading-relaxed">
+                  Hi, I'm <span className="text-white font-semibold">Amith Chidre</span> — Founder of GrowthIQX and a Business AI Growth Consultant helping entrepreneurs unlock growth with AI-powered systems.
+                </p>
+
+                <p className="text-lg leading-relaxed">
+                  After 12+ years of building and running businesses in the US, I've seen exactly where companies lose time, money, and momentum — and GrowthIQX was created to eliminate that.
+                </p>
+
+                <p className="text-lg leading-relaxed">
+                  I help entrepreneurs use AI not as a buzzword, but as a practical tool to save time, reduce stress, speed up execution, optimize decisions, and scale faster.
+                </p>
+
+                <p className="text-lg leading-relaxed">
+                  My mission is simple: to empower you with intelligent, done-for-you AI systems that make your business lighter, faster, and far more profitable to run.
+                </p>
+
+                <div className="flex gap-4 pt-4">
+                  <a
+                    href="https://www.linkedin.com/in/amithchidre"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-white/10 hover:bg-white/20 p-3 rounded-lg transition-all duration-300"
+                    aria-label="LinkedIn"
+                  >
+                    <Linkedin className="h-6 w-6 text-white" />
+                  </a>
+                  <a
+                    href="https://www.youtube.com/@growthiqx"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-white/10 hover:bg-white/20 p-3 rounded-lg transition-all duration-300"
+                    aria-label="YouTube"
+                  >
+                    <Youtube className="h-6 w-6 text-white" />
+                  </a>
+                </div>
+              </motion.div>
+            </div>
           </motion.div>
         </div>
       </section>
