@@ -224,14 +224,14 @@ const Home = () => {
                   <img
                     src="/WhatsApp_Logo_Alternative_0.svg"
                     alt="WhatsApp"
-                    className="h-10 w-auto brightness-110 contrast-125"
+                    className="h-10 w-auto brightness-125 contrast-150 saturate-150"
                   />
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/Instagram_Symbol_Alternative_0.svg"
                     alt="Instagram"
-                    className="h-10 w-auto brightness-110 contrast-125"
+                    className="h-10 w-auto brightness-125 contrast-150 saturate-150"
                   />
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
@@ -266,13 +266,6 @@ const Home = () => {
                   <img
                     src="/Twilio Logo SVG.svg"
                     alt="Twilio"
-                    className="h-10 w-auto brightness-110 contrast-125"
-                  />
-                </div>
-                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
-                  <img
-                    src="/gemini logo.jpg"
-                    alt="Gemini"
                     className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
@@ -312,14 +305,14 @@ const Home = () => {
                   <img
                     src="/WhatsApp_Logo_Alternative_0.svg"
                     alt="WhatsApp"
-                    className="h-10 w-auto brightness-110 contrast-125"
+                    className="h-10 w-auto brightness-125 contrast-150 saturate-150"
                   />
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/Instagram_Symbol_Alternative_0.svg"
                     alt="Instagram"
-                    className="h-10 w-auto brightness-110 contrast-125"
+                    className="h-10 w-auto brightness-125 contrast-150 saturate-150"
                   />
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
@@ -354,13 +347,6 @@ const Home = () => {
                   <img
                     src="/Twilio Logo SVG.svg"
                     alt="Twilio"
-                    className="h-10 w-auto brightness-110 contrast-125"
-                  />
-                </div>
-                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
-                  <img
-                    src="/gemini logo.jpg"
-                    alt="Gemini"
                     className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
@@ -400,14 +386,14 @@ const Home = () => {
                   <img
                     src="/WhatsApp_Logo_Alternative_0.svg"
                     alt="WhatsApp"
-                    className="h-10 w-auto brightness-110 contrast-125"
+                    className="h-10 w-auto brightness-125 contrast-150 saturate-150"
                   />
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/Instagram_Symbol_Alternative_0.svg"
                     alt="Instagram"
-                    className="h-10 w-auto brightness-110 contrast-125"
+                    className="h-10 w-auto brightness-125 contrast-150 saturate-150"
                   />
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
@@ -442,13 +428,6 @@ const Home = () => {
                   <img
                     src="/Twilio Logo SVG.svg"
                     alt="Twilio"
-                    className="h-10 w-auto brightness-110 contrast-125"
-                  />
-                </div>
-                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
-                  <img
-                    src="/gemini logo.jpg"
-                    alt="Gemini"
                     className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
