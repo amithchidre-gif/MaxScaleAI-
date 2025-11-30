@@ -199,180 +199,264 @@ const Home = () => {
             <div className="flex animate-scroll-left space-x-8 items-center">
               {/* First set of logos */}
               <div className="flex space-x-8 items-center flex-shrink-0">
-                <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-105">
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/LinkedIn-logo.png"
+                    src="/LinkedIn_Logo_0.svg"
                     alt="LinkedIn"
-                    className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-105">
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/Facebook_logo.png"
-                    alt="Facebook"
-                    className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                    src="/YouTube_Logo_0.svg"
+                    alt="YouTube"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-105">
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                  <img
+                    src="/x- logo.svg"
+                    alt="X"
+                    className="h-10 w-auto brightness-110 contrast-125"
+                  />
+                </div>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                  <img
+                    src="/WhatsApp_Logo_Alternative_0.svg"
+                    alt="WhatsApp"
+                    className="h-10 w-auto brightness-110 contrast-125"
+                  />
+                </div>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                  <img
+                    src="/Instagram_Symbol_Alternative_0.svg"
+                    alt="Instagram"
+                    className="h-10 w-auto brightness-110 contrast-125"
+                  />
+                </div>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/OpenAI-Logo-2022.png"
                     alt="OpenAI"
-                    className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-105">
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/pinecone.png"
                     alt="Pinecone"
-                    className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-105">
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/vapi logo.png"
                     alt="Vapi"
-                    className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-105">
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/airtable logo.png"
                     alt="Airtable"
-                    className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-105">
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/Twilio_logo.png"
                     alt="Twilio"
-                    className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-105">
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/gemini logo.jpg"
                     alt="Gemini"
-                    className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-105">
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/supabase logo.png"
                     alt="Supabase"
-                    className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
               </div>
               
               {/* Duplicate set for seamless loop */}
               <div className="flex space-x-8 items-center flex-shrink-0">
-                <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-105">
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/LinkedIn-logo.png"
+                    src="/LinkedIn_Logo_0.svg"
                     alt="LinkedIn"
-                    className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-105">
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/Facebook_logo.png"
-                    alt="Facebook"
-                    className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                    src="/YouTube_Logo_0.svg"
+                    alt="YouTube"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-105">
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                  <img
+                    src="/x- logo.svg"
+                    alt="X"
+                    className="h-10 w-auto brightness-110 contrast-125"
+                  />
+                </div>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                  <img
+                    src="/WhatsApp_Logo_Alternative_0.svg"
+                    alt="WhatsApp"
+                    className="h-10 w-auto brightness-110 contrast-125"
+                  />
+                </div>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                  <img
+                    src="/Instagram_Symbol_Alternative_0.svg"
+                    alt="Instagram"
+                    className="h-10 w-auto brightness-110 contrast-125"
+                  />
+                </div>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/OpenAI-Logo-2022.png"
                     alt="OpenAI"
-                    className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-105">
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/pinecone.png"
                     alt="Pinecone"
-                    className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-105">
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/vapi logo.png"
                     alt="Vapi"
-                    className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-105">
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/airtable logo.png"
                     alt="Airtable"
-                    className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-105">
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/Twilio_logo.png"
                     alt="Twilio"
-                    className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-105">
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/gemini logo.jpg"
                     alt="Gemini"
-                    className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-105">
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/supabase logo.png"
                     alt="Supabase"
-                    className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
               </div>
               
               {/* Third set for extra smoothness */}
               <div className="flex space-x-8 items-center flex-shrink-0">
-                <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-105">
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/LinkedIn-logo.png"
+                    src="/LinkedIn_Logo_0.svg"
                     alt="LinkedIn"
-                    className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-105">
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/Facebook_logo.png"
-                    alt="Facebook"
-                    className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                    src="/YouTube_Logo_0.svg"
+                    alt="YouTube"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-105">
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                  <img
+                    src="/x- logo.svg"
+                    alt="X"
+                    className="h-10 w-auto brightness-110 contrast-125"
+                  />
+                </div>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                  <img
+                    src="/WhatsApp_Logo_Alternative_0.svg"
+                    alt="WhatsApp"
+                    className="h-10 w-auto brightness-110 contrast-125"
+                  />
+                </div>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                  <img
+                    src="/Instagram_Symbol_Alternative_0.svg"
+                    alt="Instagram"
+                    className="h-10 w-auto brightness-110 contrast-125"
+                  />
+                </div>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/OpenAI-Logo-2022.png"
                     alt="OpenAI"
-                    className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-105">
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/pinecone.png"
                     alt="Pinecone"
-                    className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-105">
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/vapi logo.png"
                     alt="Vapi"
-                    className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
-                <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-gray-700 transition-all duration-300 hover:scale-105">
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
                     src="/airtable logo.png"
                     alt="Airtable"
-                    className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                    className="h-10 w-auto brightness-110 contrast-125"
+                  />
+                </div>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                  <img
+                    src="/Twilio_logo.png"
+                    alt="Twilio"
+                    className="h-10 w-auto brightness-110 contrast-125"
+                  />
+                </div>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                  <img
+                    src="/gemini logo.jpg"
+                    alt="Gemini"
+                    className="h-10 w-auto brightness-110 contrast-125"
+                  />
+                </div>
+                <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                  <img
+                    src="/supabase logo.png"
+                    alt="Supabase"
+                    className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
               </div>
