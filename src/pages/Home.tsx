@@ -576,7 +576,7 @@ const Home = () => {
       </section>
 
       {/* Meet The Founder Section */}
-      <section className="bg-black py-20">
+      <section className="bg-gray-900 py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial="initial"
