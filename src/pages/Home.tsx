@@ -236,14 +236,14 @@ const Home = () => {
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/OpenAI-Logo-2022.png"
+                    src="/OpenAI_Logo_0.svg"
                     alt="OpenAI"
                     className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/pinecone.png"
+                    src="/Pinecone.svg"
                     alt="Pinecone"
                     className="h-10 w-auto brightness-110 contrast-125"
                   />
@@ -257,14 +257,14 @@ const Home = () => {
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/airtable logo.png"
+                    src="/Airtable_idksKOtgp1_0.svg"
                     alt="Airtable"
                     className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/Twilio_logo.png"
+                    src="/Twilio Logo SVG.svg"
                     alt="Twilio"
                     className="h-10 w-auto brightness-110 contrast-125"
                   />
@@ -278,7 +278,7 @@ const Home = () => {
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/supabase logo.png"
+                    src="/supabase.svg"
                     alt="Supabase"
                     className="h-10 w-auto brightness-110 contrast-125"
                   />
@@ -324,14 +324,14 @@ const Home = () => {
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/OpenAI-Logo-2022.png"
+                    src="/OpenAI_Logo_0.svg"
                     alt="OpenAI"
                     className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/pinecone.png"
+                    src="/Pinecone.svg"
                     alt="Pinecone"
                     className="h-10 w-auto brightness-110 contrast-125"
                   />
@@ -345,14 +345,14 @@ const Home = () => {
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/airtable logo.png"
+                    src="/Airtable_idksKOtgp1_0.svg"
                     alt="Airtable"
                     className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/Twilio_logo.png"
+                    src="/Twilio Logo SVG.svg"
                     alt="Twilio"
                     className="h-10 w-auto brightness-110 contrast-125"
                   />
@@ -366,7 +366,7 @@ const Home = () => {
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/supabase logo.png"
+                    src="/supabase.svg"
                     alt="Supabase"
                     className="h-10 w-auto brightness-110 contrast-125"
                   />
@@ -412,14 +412,14 @@ const Home = () => {
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/OpenAI-Logo-2022.png"
+                    src="/OpenAI_Logo_0.svg"
                     alt="OpenAI"
                     className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/pinecone.png"
+                    src="/Pinecone.svg"
                     alt="Pinecone"
                     className="h-10 w-auto brightness-110 contrast-125"
                   />
@@ -433,14 +433,14 @@ const Home = () => {
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/airtable logo.png"
+                    src="/Airtable_idksKOtgp1_0.svg"
                     alt="Airtable"
                     className="h-10 w-auto brightness-110 contrast-125"
                   />
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/Twilio_logo.png"
+                    src="/Twilio Logo SVG.svg"
                     alt="Twilio"
                     className="h-10 w-auto brightness-110 contrast-125"
                   />
@@ -454,7 +454,7 @@ const Home = () => {
                 </div>
                 <div className="bg-white/5 border border-gray-700 rounded-xl p-6 w-32 h-20 flex items-center justify-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
                   <img
-                    src="/supabase logo.png"
+                    src="/supabase.svg"
                     alt="Supabase"
                     className="h-10 w-auto brightness-110 contrast-125"
                   />
