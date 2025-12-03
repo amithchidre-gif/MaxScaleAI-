@@ -190,7 +190,7 @@ const Home = () => {
               )}
 
               {/* Hero Content */}
-              <div className="relative px-8 md:px-12 lg:px-16 py-16">
+              <div className="relative px-8 md:px-12 lg:px-16 pt-5 pb-16">
                 <motion.div
                   initial="initial"
                   animate="animate"
