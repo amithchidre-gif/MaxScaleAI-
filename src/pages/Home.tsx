@@ -189,59 +189,11 @@ const Home = () => {
 
               {/* Hero Content */}
               <div className="relative px-8 md:px-12 lg:px-16 py-16">
-                {/* Premium 3D AI Robot Scene */}
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 1.2, delay: 0.2 }}
-                  className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-[40%] max-w-xl"
-                >
-                  {/* Multi-layer Halo Glow */}
-                  <div className="absolute inset-0 -z-10">
-                    <div className="absolute inset-0 bg-gradient-radial from-[#00FF95]/25 via-[#B05CFF]/20 to-transparent blur-3xl scale-125"></div>
-                    <div className="absolute inset-0 bg-gradient-radial from-[#00FF95]/15 to-transparent blur-2xl scale-110"></div>
-                    <div className="absolute inset-0 bg-gradient-radial from-[#B05CFF]/10 to-transparent blur-xl scale-105"></div>
-                  </div>
-
-                  {/* Main Hero Bot */}
-                  <motion.div
-                    animate={{ y: [0, -15, 0] }}
-                    transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                    className="relative w-full"
-                  >
-                    <img
-                      src="/Hero Robot.png"
-                      alt="AI Hero Robot"
-                      className="w-full h-auto drop-shadow-2xl"
-                      style={{
-                        filter: 'drop-shadow(0 0 40px rgba(0, 255, 149, 0.4)) drop-shadow(0 0 60px rgba(176, 92, 255, 0.3))'
-                      }}
-                    />
-                  </motion.div>
-
-                  {/* LeadGen Mini Bot - Floating in front */}
-                  <motion.div
-                    animate={{ y: [0, -20, 0] }}
-                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-                    className="absolute left-0 top-1/2 -translate-y-1/2 w-[45%] z-10"
-                  >
-                    <img
-                      src="/Lead Gen AI_2.png"
-                      alt="LeadGen AI Bot"
-                      className="w-full h-auto drop-shadow-2xl"
-                      style={{
-                        filter: 'drop-shadow(0 0 30px rgba(0, 255, 149, 0.5)) drop-shadow(0 0 50px rgba(0, 255, 149, 0.3))'
-                      }}
-                    />
-                  </motion.div>
-
-                </motion.div>
-
                 <motion.div
                   initial="initial"
                   animate="animate"
                   variants={fadeInUp}
-                  className="max-w-5xl lg:max-w-[55%]"
+                  className="max-w-5xl"
                 >
                   {/* Large Headline */}
                   <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.1] text-white mb-6">
