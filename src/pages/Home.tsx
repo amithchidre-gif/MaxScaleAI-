@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
-  Bot, Users, TrendingUp, Zap, Shield, Clock, Target,
+  Users, TrendingUp, Zap, Shield, Clock, Target,
   ArrowRight, Phone, MessageSquare, Globe, BarChart3,
   Settings, Headphones, PhoneCall, Search, Linkedin, Youtube, Menu, X
 } from 'lucide-react';
@@ -119,10 +119,12 @@ const Home = () => {
               {/* Navigation Bar */}
               <nav className="flex items-center justify-between px-8 md:px-12 py-6 border-b border-gray-700/50">
                 <div className="flex items-center gap-3">
-                  <div className="bg-gradient-to-br from-purple-500 to-blue-600 p-2 rounded-xl">
-                    <Bot className="h-6 w-6 text-white" />
+                  <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center">
+                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                    </svg>
                   </div>
-                  <span className="text-xl font-bold text-white">GrowthIQX</span>
+                  <span className="text-xl font-bold text-white">Growth IQ X</span>
                 </div>
 
                 <div className="hidden md:flex items-center gap-8">
@@ -139,7 +141,7 @@ const Home = () => {
                     to="/contact"
                     className="bg-gradient-to-r from-purple-500 to-purple-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:from-purple-600 hover:to-purple-700 transition-all duration-300"
                   >
-                    Contact
+                    Let's Talk
                   </Link>
                 </div>
 
@@ -181,7 +183,7 @@ const Home = () => {
                       onClick={() => setIsMobileMenuOpen(false)}
                       className="block bg-gradient-to-r from-purple-500 to-purple-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:from-purple-600 hover:to-purple-700 transition-all duration-300 text-center"
                     >
-                      Contact
+                      Let's Talk
                     </Link>
                   </div>
                 </div>
