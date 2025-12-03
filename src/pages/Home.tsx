@@ -193,20 +193,22 @@ const Home = () => {
                   className="max-w-5xl"
                 >
                   {/* Large Headline */}
-                  <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.1] text-white mb-8">
-                    AI Services<br />
-                    for your Business<br />
-                    Growth
+                  <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.1] text-white mb-6">
+                    Scale Smarter with AI
                   </h1>
+                  <div className="space-y-2 mb-8">
+                    <div className="flex flex-col md:flex-row gap-4 md:gap-6 items-start md:items-center">
+                      <span className="text-2xl md:text-3xl font-bold text-green-400">Cut Costs up to 79%</span>
+                      <span className="hidden md:inline-block w-8 h-1 bg-gradient-to-r from-purple-500 to-purple-700 rounded-full animate-pulse"></span>
+                      <span className="text-2xl md:text-3xl font-bold text-purple-400">Grow Revenue by 100%</span>
+                    </div>
+                    <div className="w-full h-1 bg-gradient-to-r from-gray-700 via-purple-500 to-gray-700 rounded-full my-2 animate-pulse"></div>
+                  </div>
 
                   {/* Subheadline */}
                   <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl leading-relaxed">
-                    We'll grow your business with AI as a leading<br />
-                    AI Automation & Marketing agency.
-                  </p>
-
-                  <p className="text-base md:text-lg text-gray-400 mb-12 max-w-2xl">
-                    We put AI at the center of everything we do.
+                    We design AI solutions that help businesses reduce expenses, generate qualified leads,<br />
+                    and double their revenue — all without adding complexity.
                   </p>
 
                   {/* CTA Row */}
