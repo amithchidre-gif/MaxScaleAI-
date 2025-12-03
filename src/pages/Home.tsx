@@ -97,13 +97,13 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section with Floating Card */}
-      <section className="bg-gray-900 text-white py-8 min-h-screen flex items-center justify-center">
-        <div className="w-[92%] mx-auto">
+      <section className="bg-gray-900 text-white py-4 flex items-center justify-center">
+        <div className="w-[98%] max-w-[98vw] aspect-square mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="relative"
+            className="relative h-full"
           >
             {/* Layer 4 - Deepest base plate */}
             <div className="absolute inset-0 bg-gray-700/20 rounded-[40px] translate-y-9 blur-md"></div>
@@ -115,7 +115,7 @@ const Home = () => {
             <div className="absolute inset-0 bg-gray-800/50 rounded-[40px] translate-y-3 blur-xl"></div>
 
             {/* Layer 1 - Main panel */}
-            <div className="relative bg-gradient-to-b from-[#0B0F17] to-[#0F1522] rounded-[40px] shadow-2xl overflow-hidden">
+            <div className="relative bg-gradient-to-b from-[#0B0F17] to-[#0F1522] rounded-[40px] shadow-2xl overflow-hidden h-full flex flex-col">
               {/* Navigation Bar */}
               <nav className="flex items-center justify-between px-8 md:px-12 py-6 border-b border-gray-700/50">
                 <div className="flex items-center gap-3">
@@ -190,7 +190,7 @@ const Home = () => {
               )}
 
               {/* Hero Content */}
-              <div className="relative px-8 md:px-12 lg:px-16 pt-5 pb-16">
+              <div className="relative px-8 md:px-12 lg:px-16 pt-5 pb-16 flex-1 flex items-center">
                 <motion.div
                   initial="initial"
                   animate="animate"
