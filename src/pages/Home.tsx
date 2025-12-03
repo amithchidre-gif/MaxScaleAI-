@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
   Bot, Users, TrendingUp, Zap, Shield, Clock, Target,
   ArrowRight, Phone, MessageSquare, Globe, BarChart3,
-  Settings, Headphones, PhoneCall, Search, Linkedin, Youtube
+  Settings, Headphones, PhoneCall, Search, Linkedin, Youtube, Menu, X
 } from 'lucide-react';
 
 const Home = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
     animate: { opacity: 1, y: 0 },
@@ -94,93 +95,171 @@ const Home = () => {
   ];
 
   return (
-    <div className="pt-20">
-      {/* Hero Section */}
-      <section className="bg-gray-900 text-white py-32 min-h-screen flex items-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <motion.div 
-            className="grid lg:grid-cols-2 gap-16 items-center"
-            initial="initial"
-            animate="animate"
-            variants={staggerChildren}
+    <div>
+      {/* Hero Section with Floating Card */}
+      <section className="bg-gray-900 text-white py-12 md:py-20 min-h-screen flex items-center justify-center">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="relative"
           >
-            {/* Left Content */}
-            <div className="space-y-8">
-              <motion.h1 
-                className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-left"
-                variants={fadeInUp}
-              >
-                Scale Smarter with AI
-              </motion.h1>
-              <div className="space-y-2 mt-2">
-                <div className="flex flex-row gap-6 items-center">
-                  <span className="text-2xl md:text-3xl font-bold text-green-400">Cut Costs up to 79%</span>
-                  <span className="hidden md:inline-block w-8 h-1 bg-gradient-to-r from-purple-500 to-purple-700 rounded-full animate-pulse"></span>
-                  <span className="text-2xl md:text-3xl font-bold text-purple-400">Grow Revenue by 100%</span>
+            {/* Base plate - thin layer */}
+            <div className="absolute inset-0 bg-gray-700/30 rounded-[40px] translate-y-6 blur-sm"></div>
+
+            {/* Soft blurred shadow layer */}
+            <div className="absolute inset-0 bg-gray-800/50 rounded-[40px] translate-y-3 blur-xl"></div>
+
+            {/* Main panel */}
+            <div className="relative bg-gradient-to-b from-gray-800 to-gray-900 rounded-[40px] shadow-2xl overflow-hidden">
+              {/* Navigation Bar */}
+              <nav className="flex items-center justify-between px-8 md:px-12 py-6 border-b border-gray-700/50">
+                <div className="flex items-center gap-3">
+                  <div className="bg-gradient-to-br from-purple-500 to-blue-600 p-2 rounded-xl">
+                    <Bot className="h-6 w-6 text-white" />
+                  </div>
+                  <span className="text-xl font-bold text-white">GrowthIQX</span>
                 </div>
-                <div className="w-full h-1 bg-gradient-to-r from-gray-700 via-purple-500 to-gray-700 rounded-full my-2 animate-pulse"></div>
-              </div>
-              <motion.p 
-                className="text-xl text-gray-300 leading-relaxed max-w-2xl text-left mt-2"
-                variants={fadeInUp}
-              >
-                We design AI solutions that help businesses reduce expenses, generate qualified leads,<br />
-                and double their revenue — all without adding complexity.
-              </motion.p>
-              <motion.div 
-                className="flex flex-col gap-6"
-                variants={fadeInUp}
-              >
-                <div className="flex flex-row gap-4">
+
+                <div className="hidden md:flex items-center gap-8">
+                  <Link to="/services" className="text-gray-300 hover:text-white transition-colors">
+                    Services
+                  </Link>
+                  <Link to="/founder" className="text-gray-300 hover:text-white transition-colors">
+                    Team
+                  </Link>
+                  <Link to="/faq" className="text-gray-300 hover:text-white transition-colors">
+                    FAQ
+                  </Link>
                   <Link
                     to="/contact"
-                    className="bg-gradient-to-r from-purple-500 to-purple-600 text-white px-8 py-4 rounded-2xl text-lg font-semibold hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg inline-flex items-center justify-center"
+                    className="bg-gradient-to-r from-purple-500 to-purple-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:from-purple-600 hover:to-purple-700 transition-all duration-300"
                   >
                     Let's Talk
                   </Link>
-                  <Link
-                    to="/services"
-                    className="border-2 border-gray-600 text-white px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-gray-800 transition-all duration-300 inline-flex items-center justify-center"
-                  >
-                    Our services
-                  </Link>
                 </div>
-                {/* Social Proof - Below buttons */}
-                <div className="flex items-center gap-4">
-                  <p className="text-gray-400 text-sm">Loved by founders worldwide</p>
-                  <div className="flex -space-x-3">
-                    <img
-                      src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&dpr=2"
-                      alt="Founder 1"
-                      className="w-10 h-10 rounded-full border-2 border-gray-700 object-cover"
-                    />
-                    <img
-                      src="https://images.pexels.com/photos/3727463/pexels-photo-3727463.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&dpr=2"
-                      alt="Founder 2"
-                      className="w-10 h-10 rounded-full border-2 border-gray-700 object-cover"
-                    />
-                    <img
-                      src="https://images.pexels.com/photos/2182969/pexels-photo-2182969.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&dpr=2"
-                      alt="Founder 3"
-                      className="w-10 h-10 rounded-full border-2 border-gray-700 object-cover"
-                    />
-                    <img
-                      src="https://images.pexels.com/photos/3727464/pexels-photo-3727464.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&dpr=2"
-                      alt="Founder 4"
-                      className="w-10 h-10 rounded-full border-2 border-gray-700 object-cover"
-                    />
+
+                <button
+                  onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                  className="md:hidden p-2 text-white hover:text-gray-300 transition-colors"
+                >
+                  {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+                </button>
+              </nav>
+
+              {/* Mobile Menu */}
+              {isMobileMenuOpen && (
+                <div className="md:hidden bg-gray-800/95 border-b border-gray-700/50">
+                  <div className="px-8 py-4 space-y-3">
+                    <Link
+                      to="/services"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="block text-gray-300 hover:text-white transition-colors py-2"
+                    >
+                      Services
+                    </Link>
+                    <Link
+                      to="/founder"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="block text-gray-300 hover:text-white transition-colors py-2"
+                    >
+                      Team
+                    </Link>
+                    <Link
+                      to="/faq"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="block text-gray-300 hover:text-white transition-colors py-2"
+                    >
+                      FAQ
+                    </Link>
+                    <Link
+                      to="/contact"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="block bg-gradient-to-r from-purple-500 to-purple-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:from-purple-600 hover:to-purple-700 transition-all duration-300 text-center"
+                    >
+                      Let's Talk
+                    </Link>
                   </div>
                 </div>
-              </motion.div>
-            </div>
-            {/* Right Content - Spline Animation */}
-            <motion.div 
-              className="flex items-center justify-center"
-              variants={fadeInUp}
-            >
-              <div className="w-full h-[600px] max-w-lg">
+              )}
+
+              {/* Hero Content */}
+              <div className="px-8 md:px-16 lg:px-20 py-16 md:py-24">
+                <motion.div
+                  initial="initial"
+                  animate="animate"
+                  variants={fadeInUp}
+                  className="max-w-5xl"
+                >
+                  {/* Large Headline */}
+                  <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.1] text-white mb-8">
+                    AI Services<br />
+                    for your Business<br />
+                    Growth
+                  </h1>
+
+                  {/* Subheadline */}
+                  <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl leading-relaxed">
+                    We'll grow your business with AI as a leading<br />
+                    AI Automation & Marketing agency.
+                  </p>
+
+                  <p className="text-base md:text-lg text-gray-400 mb-12 max-w-2xl">
+                    We put AI at the center of everything we do.
+                  </p>
+
+                  {/* CTA Row */}
+                  <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8">
+                    <div className="flex flex-wrap items-center gap-4">
+                      <Link
+                        to="/contact"
+                        className="bg-gradient-to-r from-purple-500 to-purple-600 text-white px-8 py-4 rounded-full text-base font-semibold hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                      >
+                        Let's Talk
+                      </Link>
+
+                      <Link
+                        to="/services"
+                        className="text-gray-300 hover:text-white transition-colors text-base font-medium"
+                      >
+                        Our services
+                      </Link>
+                    </div>
+
+                    {/* Divider */}
+                    <div className="hidden md:block w-px h-12 bg-gray-600"></div>
+
+                    {/* Social Proof */}
+                    <div className="flex items-center gap-4">
+                      <p className="text-gray-400 text-sm">Loved by founders worldwide</p>
+                      <div className="flex -space-x-3">
+                        <img
+                          src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&dpr=2"
+                          alt="Founder 1"
+                          className="w-10 h-10 rounded-full border-2 border-gray-700 object-cover"
+                        />
+                        <img
+                          src="https://images.pexels.com/photos/3727463/pexels-photo-3727463.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&dpr=2"
+                          alt="Founder 2"
+                          className="w-10 h-10 rounded-full border-2 border-gray-700 object-cover"
+                        />
+                        <img
+                          src="https://images.pexels.com/photos/2182969/pexels-photo-2182969.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&dpr=2"
+                          alt="Founder 3"
+                          className="w-10 h-10 rounded-full border-2 border-gray-700 object-cover"
+                        />
+                        <img
+                          src="https://images.pexels.com/photos/3727464/pexels-photo-3727464.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&dpr=2"
+                          alt="Founder 4"
+                          className="w-10 h-10 rounded-full border-2 border-gray-700 object-cover"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
               </div>
-            </motion.div>
+            </div>
           </motion.div>
         </div>
       </section>
