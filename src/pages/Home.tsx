@@ -97,21 +97,24 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section with Floating Card */}
-      <section className="bg-gray-900 text-white py-12 md:py-20 min-h-screen flex items-center justify-center">
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="bg-gray-900 text-white py-6 md:py-10 min-h-screen flex items-center justify-center">
+        <div className="w-full max-w-7xl mx-auto px-2 sm:px-3 lg:px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            {/* Base plate - thin layer */}
+            {/* Layer 4 - Deepest base plate */}
+            <div className="absolute inset-0 bg-gray-700/20 rounded-[40px] translate-y-9 blur-md"></div>
+
+            {/* Layer 3 - Base plate */}
             <div className="absolute inset-0 bg-gray-700/30 rounded-[40px] translate-y-6 blur-sm"></div>
 
-            {/* Soft blurred shadow layer */}
+            {/* Layer 2 - Soft blurred shadow layer */}
             <div className="absolute inset-0 bg-gray-800/50 rounded-[40px] translate-y-3 blur-xl"></div>
 
-            {/* Main panel */}
+            {/* Layer 1 - Main panel */}
             <div className="relative bg-gradient-to-b from-gray-800 to-gray-900 rounded-[40px] shadow-2xl overflow-hidden">
               {/* Navigation Bar */}
               <nav className="flex items-center justify-between px-8 md:px-12 py-6 border-b border-gray-700/50">
@@ -207,8 +210,7 @@ const Home = () => {
 
                   {/* Subheadline */}
                   <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl leading-relaxed">
-                    We design AI solutions that help businesses reduce expenses, generate qualified leads,<br />
-                    and double their revenue — all without adding complexity.
+                    We design AI solutions that help businesses reduce expenses, generate qualified leads, and double their revenue — all without adding complexity.
                   </p>
 
                   {/* CTA Row */}
