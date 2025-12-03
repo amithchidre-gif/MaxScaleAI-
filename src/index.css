@@ -31,3 +31,11 @@
 .animate-float {
   animation: float 3s ease-in-out infinite;
 }
+
+.animate-float-slow {
+  animation: float 4s ease-in-out infinite;
+}
+
+.bg-gradient-radial {
+  background: radial-gradient(circle, var(--tw-gradient-stops));
+}
