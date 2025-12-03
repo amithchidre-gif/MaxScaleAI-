@@ -97,8 +97,8 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section with Floating Card */}
-      <section className="bg-gray-900 text-white py-6 md:py-10 min-h-screen flex items-center justify-center">
-        <div className="w-full max-w-7xl mx-auto px-2 sm:px-3 lg:px-4">
+      <section className="bg-gray-900 text-white py-3 md:py-5 min-h-screen flex items-center justify-center">
+        <div className="w-full max-w-[92rem] mx-auto px-1 sm:px-1.5 lg:px-2">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
