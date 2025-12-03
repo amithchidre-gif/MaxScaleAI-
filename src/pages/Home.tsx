@@ -198,198 +198,43 @@ const Home = () => {
                 >
                   {/* Multi-layer Halo Glow */}
                   <div className="absolute inset-0 -z-10">
-                    <div className="absolute inset-0 bg-gradient-radial from-[#00FF95]/20 via-[#B05CFF]/15 to-transparent blur-3xl scale-125"></div>
-                    <div className="absolute inset-0 bg-gradient-radial from-[#00FF95]/10 to-transparent blur-2xl scale-110"></div>
+                    <div className="absolute inset-0 bg-gradient-radial from-[#00FF95]/25 via-[#B05CFF]/20 to-transparent blur-3xl scale-125"></div>
+                    <div className="absolute inset-0 bg-gradient-radial from-[#00FF95]/15 to-transparent blur-2xl scale-110"></div>
+                    <div className="absolute inset-0 bg-gradient-radial from-[#B05CFF]/10 to-transparent blur-xl scale-105"></div>
                   </div>
 
-                  <svg viewBox="0 0 500 600" className="relative z-10 w-full h-auto drop-shadow-2xl">
-                    <defs>
-                      {/* Premium Gradients */}
-                      <linearGradient id="glossyBlack" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style={{ stopColor: '#1a1a1a', stopOpacity: 1 }} />
-                        <stop offset="30%" style={{ stopColor: '#0a0a0a', stopOpacity: 1 }} />
-                        <stop offset="70%" style={{ stopColor: '#050505', stopOpacity: 1 }} />
-                        <stop offset="100%" style={{ stopColor: '#1a1a1a', stopOpacity: 1 }} />
-                      </linearGradient>
+                  {/* Main Hero Bot */}
+                  <motion.div
+                    animate={{ y: [0, -15, 0] }}
+                    transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                    className="relative w-full"
+                  >
+                    <img
+                      src="/Hero Robot.png"
+                      alt="AI Hero Robot"
+                      className="w-full h-auto drop-shadow-2xl"
+                      style={{
+                        filter: 'drop-shadow(0 0 40px rgba(0, 255, 149, 0.4)) drop-shadow(0 0 60px rgba(176, 92, 255, 0.3))'
+                      }}
+                    />
+                  </motion.div>
 
-                      <linearGradient id="neonGreen" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style={{ stopColor: '#00FF95', stopOpacity: 1 }} />
-                        <stop offset="100%" style={{ stopColor: '#00cc7a', stopOpacity: 1 }} />
-                      </linearGradient>
+                  {/* LeadGen Mini Bot - Floating in front */}
+                  <motion.div
+                    animate={{ y: [0, -20, 0] }}
+                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+                    className="absolute left-0 top-1/2 -translate-y-1/2 w-[45%] z-10"
+                  >
+                    <img
+                      src="/Lead Gen AI_2.png"
+                      alt="LeadGen AI Bot"
+                      className="w-full h-auto drop-shadow-2xl"
+                      style={{
+                        filter: 'drop-shadow(0 0 30px rgba(0, 255, 149, 0.5)) drop-shadow(0 0 50px rgba(0, 255, 149, 0.3))'
+                      }}
+                    />
+                  </motion.div>
 
-                      <linearGradient id="neonPurple" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style={{ stopColor: '#B05CFF', stopOpacity: 1 }} />
-                        <stop offset="100%" style={{ stopColor: '#8B3FD9', stopOpacity: 1 }} />
-                      </linearGradient>
-
-                      <radialGradient id="studioLight" cx="30%" cy="30%">
-                        <stop offset="0%" style={{ stopColor: '#ffffff', stopOpacity: 0.4 }} />
-                        <stop offset="100%" style={{ stopColor: '#ffffff', stopOpacity: 0 }} />
-                      </radialGradient>
-
-                      <radialGradient id="greenGlow">
-                        <stop offset="0%" style={{ stopColor: '#00FF95', stopOpacity: 0.6 }} />
-                        <stop offset="100%" style={{ stopColor: '#00FF95', stopOpacity: 0 }} />
-                      </radialGradient>
-
-                      <radialGradient id="purpleGlow">
-                        <stop offset="0%" style={{ stopColor: '#B05CFF', stopOpacity: 0.6 }} />
-                        <stop offset="100%" style={{ stopColor: '#B05CFF', stopOpacity: 0 }} />
-                      </radialGradient>
-
-                      <filter id="softShadow">
-                        <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
-                        <feOffset dx="0" dy="8" result="offsetblur"/>
-                        <feFlood floodColor="#000000" floodOpacity="0.3"/>
-                        <feComposite in2="offsetblur" operator="in"/>
-                        <feMerge>
-                          <feMergeNode/>
-                          <feMergeNode in="SourceGraphic"/>
-                        </feMerge>
-                      </filter>
-
-                      <filter id="glow">
-                        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-                        <feMerge>
-                          <feMergeNode in="coloredBlur"/>
-                          <feMergeNode in="SourceGraphic"/>
-                        </feMerge>
-                      </filter>
-                    </defs>
-
-                    {/* Main Hero Bot */}
-                    <g className="animate-float" filter="url(#softShadow)">
-                      {/* Ground platform with gradient */}
-                      <ellipse cx="250" cy="560" rx="120" ry="20" fill="url(#neonGreen)" opacity="0.3" />
-                      <ellipse cx="250" cy="560" rx="100" ry="15" fill="url(#neonGreen)" opacity="0.5" />
-
-                      {/* Legs with purple accents */}
-                      <rect x="200" y="460" width="40" height="100" rx="20" fill="url(#glossyBlack)" />
-                      <rect x="260" y="460" width="40" height="100" rx="20" fill="url(#glossyBlack)" />
-                      <ellipse cx="220" cy="465" rx="15" ry="8" fill="url(#studioLight)" />
-                      <ellipse cx="280" cy="465" rx="15" ry="8" fill="url(#studioLight)" />
-
-                      {/* Purple knee joints */}
-                      <circle cx="220" cy="510" r="14" fill="url(#neonPurple)" opacity="0.8" filter="url(#glow)" />
-                      <circle cx="280" cy="510" r="14" fill="url(#neonPurple)" opacity="0.8" filter="url(#glow)" />
-                      <circle cx="220" cy="510" r="25" fill="url(#purpleGlow)" opacity="0.4" />
-                      <circle cx="280" cy="510" r="25" fill="url(#purpleGlow)" opacity="0.4" />
-
-                      {/* Feet */}
-                      <ellipse cx="220" cy="565" rx="28" ry="18" fill="url(#glossyBlack)" />
-                      <ellipse cx="280" cy="565" rx="28" ry="18" fill="url(#glossyBlack)" />
-                      <rect x="192" y="555" width="56" height="20" rx="10" fill="url(#glossyBlack)" />
-                      <rect x="252" y="555" width="56" height="20" rx="10" fill="url(#glossyBlack)" />
-
-                      {/* Main Body - glossy black */}
-                      <rect x="180" y="300" width="140" height="160" rx="25" fill="url(#glossyBlack)" />
-                      <ellipse cx="220" cy="320" rx="35" ry="50" fill="url(#studioLight)" opacity="0.2" />
-
-                      {/* Purple chest core */}
-                      <circle cx="250" cy="370" r="30" fill="url(#neonPurple)" opacity="0.3" filter="url(#glow)" />
-                      <circle cx="250" cy="370" r="18" fill="url(#neonPurple)" filter="url(#glow)" />
-                      <circle cx="250" cy="370" r="50" fill="url(#purpleGlow)" opacity="0.5" />
-
-                      {/* Arms with purple accents */}
-                      <rect x="125" y="310" width="45" height="110" rx="22" fill="url(#glossyBlack)" />
-                      <rect x="330" y="310" width="45" height="110" rx="22" fill="url(#glossyBlack)" />
-                      <ellipse cx="147" cy="315" rx="15" ry="8" fill="url(#studioLight)" opacity="0.3" />
-                      <ellipse cx="352" cy="315" rx="15" ry="8" fill="url(#studioLight)" opacity="0.3" />
-
-                      {/* Purple elbow joints */}
-                      <circle cx="147" cy="360" r="16" fill="url(#neonPurple)" opacity="0.6" stroke="url(#neonPurple)" strokeWidth="2" filter="url(#glow)" />
-                      <circle cx="352" cy="360" r="16" fill="url(#neonPurple)" opacity="0.6" stroke="url(#neonPurple)" strokeWidth="2" filter="url(#glow)" />
-
-                      {/* Hands */}
-                      <circle cx="147" cy="425" r="20" fill="url(#glossyBlack)" />
-                      <circle cx="352" cy="425" r="20" fill="url(#glossyBlack)" />
-                      <ellipse cx="147" cy="420" rx="10" ry="6" fill="url(#studioLight)" opacity="0.3" />
-                      <ellipse cx="352" cy="420" rx="10" ry="6" fill="url(#studioLight)" opacity="0.3" />
-
-                      {/* Head - large glossy sphere */}
-                      <circle cx="250" cy="220" r="80" fill="url(#glossyBlack)" />
-                      <ellipse cx="230" cy="200" rx="30" ry="35" fill="url(#studioLight)" opacity="0.3" />
-
-                      {/* Green headphone pieces */}
-                      <rect x="150" y="200" width="25" height="70" rx="12" fill="url(#neonGreen)" filter="url(#glow)" />
-                      <rect x="325" y="200" width="25" height="70" rx="12" fill="url(#neonGreen)" filter="url(#glow)" />
-                      <circle cx="162" cy="235" r="35" fill="url(#greenGlow)" opacity="0.5" />
-                      <circle cx="337" cy="235" r="35" fill="url(#greenGlow)" opacity="0.5" />
-
-                      {/* Headband connector */}
-                      <path d="M 175 190 Q 250 170 325 190" stroke="url(#neonGreen)" strokeWidth="8" fill="none" strokeLinecap="round" filter="url(#glow)" />
-
-                      {/* Happy face - white smile */}
-                      <path d="M 210 235 Q 250 250 290 235" stroke="#FFFFFF" strokeWidth="6" fill="none" strokeLinecap="round" opacity="0.9" />
-
-                      {/* White eyes */}
-                      <ellipse cx="220" cy="210" rx="18" ry="25" fill="#FFFFFF" opacity="0.9" />
-                      <ellipse cx="280" cy="210" rx="18" ry="25" fill="#FFFFFF" opacity="0.9" />
-
-                      {/* Rim lighting */}
-                      <path d="M 310 320 Q 335 380 310 440" stroke="url(#neonGreen)" strokeWidth="3" fill="none" strokeLinecap="round" opacity="0.7" />
-                      <path d="M 190 320 Q 165 380 190 440" stroke="url(#neonGreen)" strokeWidth="3" fill="none" strokeLinecap="round" opacity="0.7" />
-                    </g>
-
-                    {/* LeadGen Mini Bot - Floating in front */}
-                    <g className="animate-float-slow" style={{ animationDelay: '0.5s' }}>
-                      {/* Mini bot platform */}
-                      <ellipse cx="130" cy="380" rx="45" ry="8" fill="url(#neonGreen)" opacity="0.4" />
-
-                      {/* Mini bot body */}
-                      <rect x="95" y="300" width="70" height="75" rx="15" fill="url(#glossyBlack)" filter="url(#softShadow)" />
-                      <ellipse cx="115" cy="315" rx="15" ry="20" fill="url(#studioLight)" opacity="0.2" />
-
-                      {/* Mini bot head */}
-                      <circle cx="130" cy="270" r="35" fill="url(#glossyBlack)" />
-                      <ellipse cx="120" cy="260" rx="12" ry="15" fill="url(#studioLight)" opacity="0.2" />
-
-                      {/* Green glowing eyes */}
-                      <circle cx="120" cy="268" r="8" fill="url(#neonGreen)" filter="url(#glow)" />
-                      <circle cx="140" cy="268" r="8" fill="url(#neonGreen)" filter="url(#glow)" />
-                      <circle cx="120" cy="268" r="15" fill="url(#greenGlow)" opacity="0.5" />
-                      <circle cx="140" cy="268" r="15" fill="url(#greenGlow)" opacity="0.5" />
-
-                      {/* Smile */}
-                      <path d="M 115 280 Q 130 288 145 280" stroke="url(#neonGreen)" strokeWidth="2" fill="none" strokeLinecap="round" />
-
-                      {/* Green accent lines */}
-                      <rect x="105" y="310" width="50" height="3" rx="1.5" fill="url(#neonGreen)" opacity="0.8" />
-                      <rect x="105" y="320" width="50" height="3" rx="1.5" fill="url(#neonGreen)" opacity="0.8" />
-
-                      {/* Hologram label - LeadGen AI */}
-                      <rect x="70" y="335" width="120" height="32" rx="8" fill="url(#neonGreen)" opacity="0.15" stroke="url(#neonGreen)" strokeWidth="2" filter="url(#glow)" />
-                      <text x="130" y="356" fontSize="14" fontWeight="bold" fill="#FFFFFF" textAnchor="middle">LeadGen AI</text>
-
-                      {/* HUD Icons around mini bot */}
-                      {/* Funnel Icon - Top Left */}
-                      <g transform="translate(40, 240)">
-                        <rect x="0" y="0" width="35" height="35" rx="6" fill="rgba(0, 255, 149, 0.1)" stroke="url(#neonGreen)" strokeWidth="1.5" />
-                        <path d="M 10 12 L 25 12 L 20 20 L 15 20 Z" stroke="url(#neonGreen)" strokeWidth="1.5" fill="none" />
-                        <rect x="16" y="20" width="3" height="6" fill="url(#neonGreen)" />
-                      </g>
-
-                      {/* Target Icon - Top Right */}
-                      <g transform="translate(175, 245)">
-                        <rect x="0" y="0" width="35" height="35" rx="6" fill="rgba(0, 255, 149, 0.1)" stroke="url(#neonGreen)" strokeWidth="1.5" />
-                        <circle cx="17.5" cy="17.5" r="10" stroke="url(#neonGreen)" strokeWidth="1.5" fill="none" />
-                        <circle cx="17.5" cy="17.5" r="6" stroke="url(#neonGreen)" strokeWidth="1.5" fill="none" />
-                        <circle cx="17.5" cy="17.5" r="2" fill="url(#neonGreen)" />
-                      </g>
-
-                      {/* Growth Graph Icon - Bottom */}
-                      <g transform="translate(105, 385)">
-                        <rect x="0" y="0" width="35" height="35" rx="6" fill="rgba(0, 255, 149, 0.1)" stroke="url(#neonGreen)" strokeWidth="1.5" />
-                        <path d="M 8 22 L 12 18 L 16 20 L 22 12 L 27 15" stroke="url(#neonGreen)" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
-                        <polyline points="22,12 27,12 27,15" fill="url(#neonGreen)" />
-                      </g>
-
-                      {/* Connecting lines from icons to bot */}
-                      <line x1="57" y1="275" x2="95" y2="320" stroke="url(#neonGreen)" strokeWidth="1" opacity="0.3" strokeDasharray="3,3" />
-                      <line x1="192" y1="280" x2="160" y2="320" stroke="url(#neonGreen)" strokeWidth="1" opacity="0.3" strokeDasharray="3,3" />
-                      <line x1="122" y1="385" x2="122" y2="375" stroke="url(#neonGreen)" strokeWidth="1" opacity="0.3" strokeDasharray="3,3" />
-                    </g>
-                  </svg>
                 </motion.div>
 
                 <motion.div
