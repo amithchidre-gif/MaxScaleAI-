@@ -188,12 +188,130 @@ const Home = () => {
               )}
 
               {/* Hero Content */}
-              <div className="px-8 md:px-12 lg:px-16 py-16">
+              <div className="relative px-8 md:px-12 lg:px-16 py-16">
+                {/* 3D AI Robot Illustration */}
+                <motion.div
+                  initial={{ opacity: 0, x: 50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 1, delay: 0.3 }}
+                  className="hidden lg:block absolute right-8 top-1/2 -translate-y-1/2 w-[38%] max-w-md"
+                >
+                  {/* Glow Effect */}
+                  <div className="absolute inset-0 bg-[#0aff9d] opacity-[0.18] blur-3xl rounded-full scale-110"></div>
+
+                  {/* Robot SVG */}
+                  <svg viewBox="0 0 400 500" className="relative z-10 drop-shadow-2xl" style={{ filter: 'drop-shadow(0 0 30px rgba(10, 255, 157, 0.4))' }}>
+                    <defs>
+                      {/* Gradients for glossy effect */}
+                      <linearGradient id="robotBodyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style={{ stopColor: '#1a1a1a', stopOpacity: 1 }} />
+                        <stop offset="50%" style={{ stopColor: '#0a0a0a', stopOpacity: 1 }} />
+                        <stop offset="100%" style={{ stopColor: '#1a1a1a', stopOpacity: 1 }} />
+                      </linearGradient>
+                      <linearGradient id="neonGreenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style={{ stopColor: '#0aff9d', stopOpacity: 1 }} />
+                        <stop offset="100%" style={{ stopColor: '#00cc7a', stopOpacity: 1 }} />
+                      </linearGradient>
+                      <linearGradient id="reflectionGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style={{ stopColor: '#ffffff', stopOpacity: 0.3 }} />
+                        <stop offset="100%" style={{ stopColor: '#ffffff', stopOpacity: 0 }} />
+                      </linearGradient>
+                      <radialGradient id="glowGradient">
+                        <stop offset="0%" style={{ stopColor: '#0aff9d', stopOpacity: 0.8 }} />
+                        <stop offset="100%" style={{ stopColor: '#0aff9d', stopOpacity: 0 }} />
+                      </radialGradient>
+                    </defs>
+
+                    {/* Floating animation container */}
+                    <g className="animate-float">
+                      {/* Main Body */}
+                      <rect x="120" y="180" width="160" height="200" rx="20" fill="url(#robotBodyGradient)" />
+                      <rect x="125" y="185" width="60" height="80" rx="10" fill="url(#reflectionGradient)" opacity="0.3" />
+
+                      {/* Head */}
+                      <ellipse cx="200" cy="140" rx="70" ry="60" fill="url(#robotBodyGradient)" />
+                      <ellipse cx="170" cy="135" rx="15" ry="8" fill="url(#reflectionGradient)" opacity="0.4" />
+
+                      {/* Eyes with neon glow */}
+                      <circle cx="180" cy="135" r="12" fill="url(#neonGreenGradient)" />
+                      <circle cx="220" cy="135" r="12" fill="url(#neonGreenGradient)" />
+                      <circle cx="180" cy="135" r="8" fill="#fff" opacity="0.9" />
+                      <circle cx="220" cy="135" r="8" fill="#fff" opacity="0.9" />
+                      <circle cx="180" cy="135" r="20" fill="url(#glowGradient)" opacity="0.5" />
+                      <circle cx="220" cy="135" r="20" fill="url(#glowGradient)" opacity="0.5" />
+
+                      {/* Antenna */}
+                      <line x1="200" y1="90" x2="200" y2="110" stroke="url(#neonGreenGradient)" strokeWidth="3" strokeLinecap="round" />
+                      <circle cx="200" cy="85" r="8" fill="url(#neonGreenGradient)" />
+                      <circle cx="200" cy="85" r="12" fill="url(#glowGradient)" opacity="0.6" />
+
+                      {/* Mouth/Speaker grille */}
+                      <rect x="175" y="155" width="50" height="15" rx="7" fill="#0a0a0a" />
+                      <line x1="180" y1="155" x2="180" y2="170" stroke="url(#neonGreenGradient)" strokeWidth="2" />
+                      <line x1="190" y1="155" x2="190" y2="170" stroke="url(#neonGreenGradient)" strokeWidth="2" />
+                      <line x1="200" y1="155" x2="200" y2="170" stroke="url(#neonGreenGradient)" strokeWidth="2" />
+                      <line x1="210" y1="155" x2="210" y2="170" stroke="url(#neonGreenGradient)" strokeWidth="2" />
+                      <line x1="220" y1="155" x2="220" y2="170" stroke="url(#neonGreenGradient)" strokeWidth="2" />
+
+                      {/* Neck connector */}
+                      <rect x="180" y="175" width="40" height="10" rx="5" fill="url(#neonGreenGradient)" />
+
+                      {/* Chest panel with neon accent */}
+                      <rect x="160" y="220" width="80" height="100" rx="10" fill="#0a0a0a" stroke="url(#neonGreenGradient)" strokeWidth="2" />
+                      <circle cx="200" cy="250" r="15" fill="url(#neonGreenGradient)" opacity="0.3" />
+                      <circle cx="200" cy="250" r="8" fill="url(#neonGreenGradient)" />
+                      <circle cx="200" cy="250" r="20" fill="url(#glowGradient)" opacity="0.4" />
+
+                      {/* Status indicators */}
+                      <circle cx="170" cy="290" r="4" fill="url(#neonGreenGradient)" />
+                      <circle cx="190" cy="290" r="4" fill="url(#neonGreenGradient)" />
+                      <circle cx="210" cy="290" r="4" fill="url(#neonGreenGradient)" />
+                      <circle cx="230" cy="290" r="4" fill="url(#neonGreenGradient)" />
+
+                      {/* Arms */}
+                      <rect x="80" y="200" width="35" height="120" rx="17" fill="url(#robotBodyGradient)" />
+                      <rect x="285" y="200" width="35" height="120" rx="17" fill="url(#robotBodyGradient)" />
+                      <ellipse cx="97" cy="205" rx="12" ry="6" fill="url(#reflectionGradient)" opacity="0.3" />
+                      <ellipse cx="302" cy="205" rx="12" ry="6" fill="url(#reflectionGradient)" opacity="0.3" />
+
+                      {/* Arm joints with neon accents */}
+                      <circle cx="97" cy="245" r="15" fill="url(#neonGreenGradient)" opacity="0.3" stroke="url(#neonGreenGradient)" strokeWidth="2" />
+                      <circle cx="302" cy="245" r="15" fill="url(#neonGreenGradient)" opacity="0.3" stroke="url(#neonGreenGradient)" strokeWidth="2" />
+
+                      {/* Hands */}
+                      <circle cx="97" cy="325" r="18" fill="url(#robotBodyGradient)" />
+                      <circle cx="302" cy="325" r="18" fill="url(#robotBodyGradient)" />
+                      <circle cx="97" cy="320" r="8" fill="url(#reflectionGradient)" opacity="0.4" />
+                      <circle cx="302" cy="320" r="8" fill="url(#reflectionGradient)" opacity="0.4" />
+
+                      {/* Legs */}
+                      <rect x="150" y="380" width="40" height="90" rx="20" fill="url(#robotBodyGradient)" />
+                      <rect x="210" y="380" width="40" height="90" rx="20" fill="url(#robotBodyGradient)" />
+                      <ellipse cx="165" cy="385" rx="10" ry="5" fill="url(#reflectionGradient)" opacity="0.3" />
+                      <ellipse cx="225" cy="385" rx="10" ry="5" fill="url(#reflectionGradient)" opacity="0.3" />
+
+                      {/* Knee joints */}
+                      <circle cx="170" cy="425" r="12" fill="url(#neonGreenGradient)" opacity="0.3" stroke="url(#neonGreenGradient)" strokeWidth="2" />
+                      <circle cx="230" cy="425" r="12" fill="url(#neonGreenGradient)" opacity="0.3" stroke="url(#neonGreenGradient)" strokeWidth="2" />
+
+                      {/* Feet */}
+                      <ellipse cx="170" cy="475" rx="25" ry="15" fill="url(#robotBodyGradient)" />
+                      <ellipse cx="230" cy="475" rx="25" ry="15" fill="url(#robotBodyGradient)" />
+                      <rect x="145" y="465" width="50" height="15" rx="7" fill="url(#robotBodyGradient)" />
+                      <rect x="205" y="465" width="50" height="15" rx="7" fill="url(#robotBodyGradient)" />
+
+                      {/* Rim lighting effect */}
+                      <path d="M 270 200 Q 290 260 270 320" stroke="rgba(10, 255, 157, 0.6)" strokeWidth="2" fill="none" strokeLinecap="round" />
+                      <path d="M 130 200 Q 110 260 130 320" stroke="rgba(10, 255, 157, 0.6)" strokeWidth="2" fill="none" strokeLinecap="round" />
+                    </g>
+                  </svg>
+                </motion.div>
+
                 <motion.div
                   initial="initial"
                   animate="animate"
                   variants={fadeInUp}
-                  className="max-w-5xl"
+                  className="max-w-5xl lg:max-w-3xl"
                 >
                   {/* Large Headline */}
                   <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.1] text-white mb-6">
