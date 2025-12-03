@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
-  Users, TrendingUp, Zap, Shield, Clock, Target,
+  Bot, Users, TrendingUp, Zap, Shield, Clock, Target,
   ArrowRight, Phone, MessageSquare, Globe, BarChart3,
   Settings, Headphones, PhoneCall, Search, Linkedin, Youtube, Menu, X
 } from 'lucide-react';
