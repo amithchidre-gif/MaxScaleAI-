@@ -126,11 +126,11 @@ const Home = () => {
                 </div>
 
                 <div className="hidden md:flex items-center gap-8">
+                  <Link to="/" className="text-gray-300 hover:text-white transition-colors">
+                    Home
+                  </Link>
                   <Link to="/services" className="text-gray-300 hover:text-white transition-colors">
                     Services
-                  </Link>
-                  <Link to="/founder" className="text-gray-300 hover:text-white transition-colors">
-                    Team
                   </Link>
                   <Link to="/faq" className="text-gray-300 hover:text-white transition-colors">
                     FAQ
@@ -139,7 +139,7 @@ const Home = () => {
                     to="/contact"
                     className="bg-gradient-to-r from-purple-500 to-purple-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:from-purple-600 hover:to-purple-700 transition-all duration-300"
                   >
-                    Let's Talk
+                    Contact
                   </Link>
                 </div>
 
@@ -156,18 +156,18 @@ const Home = () => {
                 <div className="md:hidden bg-gray-800/95 border-b border-gray-700/50">
                   <div className="px-8 py-4 space-y-3">
                     <Link
+                      to="/"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="block text-gray-300 hover:text-white transition-colors py-2"
+                    >
+                      Home
+                    </Link>
+                    <Link
                       to="/services"
                       onClick={() => setIsMobileMenuOpen(false)}
                       className="block text-gray-300 hover:text-white transition-colors py-2"
                     >
                       Services
-                    </Link>
-                    <Link
-                      to="/founder"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                      className="block text-gray-300 hover:text-white transition-colors py-2"
-                    >
-                      Team
                     </Link>
                     <Link
                       to="/faq"
@@ -181,7 +181,7 @@ const Home = () => {
                       onClick={() => setIsMobileMenuOpen(false)}
                       className="block bg-gradient-to-r from-purple-500 to-purple-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:from-purple-600 hover:to-purple-700 transition-all duration-300 text-center"
                     >
-                      Let's Talk
+                      Contact
                     </Link>
                   </div>
                 </div>
