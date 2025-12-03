@@ -97,8 +97,8 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section with Floating Card */}
-      <section className="bg-gray-900 text-white py-3 md:py-5 min-h-screen flex items-center justify-center">
-        <div className="w-full max-w-[92rem] mx-auto px-1 sm:px-1.5 lg:px-2">
+      <section className="bg-gray-900 text-white py-8 min-h-screen flex items-center justify-center">
+        <div className="w-[92%] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -188,7 +188,7 @@ const Home = () => {
               )}
 
               {/* Hero Content */}
-              <div className="px-8 md:px-16 lg:px-20 py-16 md:py-24">
+              <div className="px-8 md:px-12 lg:px-16 py-16">
                 <motion.div
                   initial="initial"
                   animate="animate"
