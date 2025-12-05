@@ -137,12 +137,16 @@ const Home = () => {
                   <Link to="/faq" className="text-gray-300 hover:text-white transition-colors">
                     FAQ
                   </Link>
-                  <Link
-                    to="/contact"
+                  <a
+                    href="#book-meeting"
                     className="bg-gradient-to-r from-purple-500 to-purple-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:from-purple-600 hover:to-purple-700 transition-all duration-300"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document.getElementById('book-meeting')?.scrollIntoView({ behavior: 'smooth' });
+                    }}
                   >
                     Let's Talk
-                  </Link>
+                  </a>
                 </div>
 
                 <button
@@ -178,13 +182,19 @@ const Home = () => {
                     >
                       FAQ
                     </Link>
-                    <Link
-                      to="/contact"
-                      onClick={() => setIsMobileMenuOpen(false)}
+                    <a
+                      href="#book-meeting"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setIsMobileMenuOpen(false);
+                        setTimeout(() => {
+                          document.getElementById('book-meeting')?.scrollIntoView({ behavior: 'smooth' });
+                        }, 100);
+                      }}
                       className="block bg-gradient-to-r from-purple-500 to-purple-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:from-purple-600 hover:to-purple-700 transition-all duration-300 text-center"
                     >
                       Let's Talk
-                    </Link>
+                    </a>
                   </div>
                 </div>
               )}
@@ -218,12 +228,16 @@ const Home = () => {
                   {/* CTA Row */}
                   <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8">
                     <div className="flex flex-wrap items-center gap-4">
-                      <Link
-                        to="/contact"
+                      <a
+                        href="#book-meeting"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          document.getElementById('book-meeting')?.scrollIntoView({ behavior: 'smooth' });
+                        }}
                         className="bg-gradient-to-r from-purple-500 to-purple-600 text-white px-8 py-4 rounded-full text-base font-semibold hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
                       >
                         Let's Talk
-                      </Link>
+                      </a>
 
                       <Link
                         to="/services"
