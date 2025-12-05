@@ -733,6 +733,35 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Booking Calendar Section */}
+      <section id="book-meeting" className="bg-gray-100 py-16">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <h2 className="text-4xl font-bold text-gray-900 mb-3">
+              Schedule a Meeting
+            </h2>
+            <p className="text-gray-600 mb-8 text-lg">
+              Pick a time that works for you
+            </p>
+            <div className="rounded-xl shadow-2xl overflow-hidden">
+              <iframe
+                src="https://calender.growthiqx.com/book/YOUR_USER_ID"
+                width="100%"
+                height="700"
+                frameBorder="0"
+                className="border-none"
+                title="Book a Meeting"
+              />
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Final CTA Section */}
       <section className="bg-gray-800 py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
