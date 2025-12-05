@@ -9,16 +9,6 @@ import {
 
 const Home = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  const openCalendar = () => {
-    const calendarButton = document.querySelector('[data-calendar-widget]') as HTMLElement;
-    if (calendarButton) {
-      calendarButton.click();
-    } else if ((window as any).openCalendarWidget) {
-      (window as any).openCalendarWidget();
-    }
-  };
-
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
     animate: { opacity: 1, y: 0 },
@@ -147,12 +137,12 @@ const Home = () => {
                   <Link to="/faq" className="text-gray-300 hover:text-white transition-colors">
                     FAQ
                   </Link>
-                  <button
-                    onClick={openCalendar}
+                  <Link
+                    to="/contact"
                     className="bg-gradient-to-r from-purple-500 to-purple-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:from-purple-600 hover:to-purple-700 transition-all duration-300"
                   >
                     Let's Talk
-                  </button>
+                  </Link>
                 </div>
 
                 <button
@@ -188,15 +178,13 @@ const Home = () => {
                     >
                       FAQ
                     </Link>
-                    <button
-                      onClick={() => {
-                        setIsMobileMenuOpen(false);
-                        openCalendar();
-                      }}
-                      className="block bg-gradient-to-r from-purple-500 to-purple-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:from-purple-600 hover:to-purple-700 transition-all duration-300 text-center w-full"
+                    <Link
+                      to="/contact"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="block bg-gradient-to-r from-purple-500 to-purple-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:from-purple-600 hover:to-purple-700 transition-all duration-300 text-center"
                     >
                       Let's Talk
-                    </button>
+                    </Link>
                   </div>
                 </div>
               )}
@@ -230,12 +218,12 @@ const Home = () => {
                   {/* CTA Row */}
                   <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8">
                     <div className="flex flex-wrap items-center gap-4">
-                      <button
-                        onClick={openCalendar}
+                      <Link
+                        to="/contact"
                         className="bg-gradient-to-r from-purple-500 to-purple-600 text-white px-8 py-4 rounded-full text-base font-semibold hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
                       >
                         Let's Talk
-                      </button>
+                      </Link>
 
                       <Link
                         to="/services"
@@ -719,35 +707,25 @@ const Home = () => {
                   My mission is simple: to empower you with intelligent, done-for-you AI systems that make your business lighter, faster, and far more profitable to run.
                 </p>
 
-                <div className="flex flex-col gap-6 pt-4">
-                  <div className="flex gap-4">
-                    <a
-                      href="https://www.linkedin.com/in/amithchidre"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-white/10 hover:bg-white/20 p-3 rounded-lg transition-all duration-300"
-                      aria-label="LinkedIn"
-                    >
-                      <Linkedin className="h-6 w-6 text-white" />
-                    </a>
-                    <a
-                      href="https://www.youtube.com/@growthiqx"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-white/10 hover:bg-white/20 p-3 rounded-lg transition-all duration-300"
-                      aria-label="YouTube"
-                    >
-                      <Youtube className="h-6 w-6 text-white" />
-                    </a>
-                  </div>
-
-                  <button
-                    onClick={openCalendar}
-                    className="bg-gradient-to-r from-purple-500 to-purple-600 text-white px-8 py-4 rounded-full text-base font-semibold hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg inline-flex items-center justify-center gap-2 max-w-xs"
+                <div className="flex gap-4 pt-4">
+                  <a
+                    href="https://www.linkedin.com/in/amithchidre"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-white/10 hover:bg-white/20 p-3 rounded-lg transition-all duration-300"
+                    aria-label="LinkedIn"
                   >
-                    <Phone className="h-5 w-5" />
-                    Book a Meeting with Amith
-                  </button>
+                    <Linkedin className="h-6 w-6 text-white" />
+                  </a>
+                  <a
+                    href="https://www.youtube.com/@growthiqx"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-white/10 hover:bg-white/20 p-3 rounded-lg transition-all duration-300"
+                    aria-label="YouTube"
+                  >
+                    <Youtube className="h-6 w-6 text-white" />
+                  </a>
                 </div>
               </motion.div>
             </div>
@@ -770,13 +748,13 @@ const Home = () => {
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
               Join hundreds of businesses that have already transformed their operations with our AI solutions.
             </p>
-            <button
-              onClick={openCalendar}
+            <Link
+              to="/contact"
               className="bg-gradient-to-r from-purple-500 to-purple-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:from-purple-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg inline-flex items-center gap-2"
             >
               Schedule Your Free Consultation
               <ArrowRight className="h-5 w-5" />
-            </button>
+            </Link>
           </motion.div>
         </div>
       </section>
