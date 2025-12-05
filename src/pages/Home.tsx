@@ -734,8 +734,8 @@ const Home = () => {
       </section>
 
       {/* Booking Calendar Section */}
-      <section id="book-meeting" className="bg-gray-950 py-16">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="book-meeting" className="bg-gray-950 py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial="initial"
             whileInView="animate"
@@ -755,20 +755,17 @@ const Home = () => {
             whileInView="animate"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="relative p-1 rounded-2xl bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500"
           >
-            <div className="rounded-xl overflow-hidden bg-gray-950">
-              <iframe
-                src="https://calender.growthiqx.com/book/cmio9i9x30000k0040q70mwwn?embed=true"
-                width="100%"
-                height="750"
-                frameBorder="0"
-                allow="camera; microphone; display-capture"
-                className="border-none"
-                title="Book a Meeting"
-                sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
-              />
-            </div>
+            <iframe
+              src="https://calender.growthiqx.com/book/cmio9i9x30000k0040q70mwwn?embed=true"
+              width="100%"
+              height="650"
+              frameBorder="0"
+              allow="camera; microphone; display-capture"
+              className="border-none rounded-xl"
+              title="Book a Meeting"
+              sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
+            />
           </motion.div>
         </div>
       </section>
