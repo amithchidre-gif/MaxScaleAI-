@@ -759,12 +759,14 @@ const Home = () => {
           >
             <div className="rounded-xl overflow-hidden bg-gray-950">
               <iframe
-                src="https://calender.growthiqx.com/book/cmio9i9x30000k0040q70mwwn"
+                src="https://calender.growthiqx.com/book/cmio9i9x30000k0040q70mwwn?embed=true"
                 width="100%"
                 height="750"
                 frameBorder="0"
+                allow="camera; microphone; display-capture"
                 className="border-none"
                 title="Book a Meeting"
+                sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
               />
             </div>
           </motion.div>
