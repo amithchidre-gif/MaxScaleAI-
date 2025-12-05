@@ -734,25 +734,34 @@ const Home = () => {
       </section>
 
       {/* Booking Calendar Section */}
-      <section id="book-meeting" className="bg-gray-100 py-16">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section id="book-meeting" className="bg-gray-950 py-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
             variants={fadeInUp}
+            className="text-center mb-12"
           >
-            <h2 className="text-4xl font-bold text-gray-900 mb-3">
+            <h2 className="text-4xl font-bold text-white mb-3">
               Schedule a Meeting
             </h2>
-            <p className="text-gray-600 mb-8 text-lg">
+            <p className="text-gray-400 text-lg">
               Pick a time that works for you
             </p>
-            <div className="rounded-xl shadow-2xl overflow-hidden">
+          </motion.div>
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="relative p-1 rounded-2xl bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500"
+          >
+            <div className="rounded-xl overflow-hidden bg-gray-950">
               <iframe
-                src="https://calender.growthiqx.com/book/cmb6ek5wv0000pato7m55dqmn"
+                src="https://calender.growthiqx.com/book/cmio9i9x30000k0040q70mwwn"
                 width="100%"
-                height="700"
+                height="750"
                 frameBorder="0"
                 className="border-none"
                 title="Book a Meeting"
